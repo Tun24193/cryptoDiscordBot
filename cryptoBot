@@ -2,9 +2,8 @@ import discord
 import requests
 from replit import db
 from threading import Timer
-import os
-import sys
-BOT_TOKEN = 'OTEyMzk0NzYwOTQ0MjM4Njc1.YZvT1g.xqg4ngY2dRaDBKB1NFdgCwCzebA'
+
+BOT_TOKEN = 'UR_BOT_TOKEN'
 
 #call low price 24 hours
 def getCryptoLow(crypto):
@@ -338,9 +337,6 @@ async def on_message(message):
   if message.content.startswith('$trackrsi'):
     await message.channel.send(f'Started detecting rsi alert for {db["detect crypto"]} at {list(db["detect rsi"])}.')
     await detectRsiAlert(db["detect crypto"],db["detect rsi"])
-    if message.content.startswith('$restart'):
-      await detectPriceAlert(db["detect crypto"],db["detect price"]).cancel()
-      await os.execl(sys.executable, sys.executable, *sys.argv)
 
   # check whether a coin is being supported
   if message.content.startswith('$support '):
@@ -369,9 +365,7 @@ async def on_message(message):
   if message.content.startswith('$start'):
     await message.channel.send(f'Started detecting price alert for {db["detect crypto"]} at {list(db["detect price"])} USD.')
     await detectPriceAlert(db["detect crypto"],db["detect price"])
-    if message.content.startswith('$restart'):
-      await detectPriceAlert(db["detect crypto"],db["detect price"]).cancel()
-      await os.execl(sys.executable, sys.executable, *sys.argv)
+
 
 
 client.run(BOT_TOKEN)
