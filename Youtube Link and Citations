@@ -1,10 +1,11 @@
-youtube video: https://www.youtube.com/watch?v=jx_x5adrxVE
+#youtube video: 
+  https://www.youtube.com/watch?v=jx_x5adrxVE
 
-citations:
-https://www.youtube.com/watch?v=A5rPJV_KFWw&list=PLR8GQrwPTwEqIcGalzduuw8mJOuu10kpD&index=3
-https://www.youtube.com/watch?v=jjDzozUwjXc
-https://www.youtube.com/watch?v=A5rPJV_KFWw&t=898s
-https://github.com/Andrew-FungKinHo/YouTube/blob/main/Discord%20Crypto%20Bot/main.py
-https://www.macroption.com/rsi-calculation/
-https://botghost.com/
-https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+#citations:
+  https://www.youtube.com/watch?v=A5rPJV_KFWw&list=PLR8GQrwPTwEqIcGalzduuw8mJOuu10kpD&index=3
+  https://www.youtube.com/watch?v=jjDzozUwjXc
+  https://www.youtube.com/watch?v=A5rPJV_KFWw&t=898s
+  https://github.com/Andrew-FungKinHo/YouTube/blob/main/Discord%20Crypto%20Bot/main.py
+  https://www.macroption.com/rsi-calculation/
+  https://botghost.com/
+  https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
